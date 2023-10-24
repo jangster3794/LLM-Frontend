@@ -1,6 +1,6 @@
 import { getRequest, postRequest, multipartPostRequeset } from "./WebService"
 
-const serverURL = "http://localhost:5000"
+const serverURL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000"
 
 function askSingleQuery(question) {
     let url = `${serverURL}/llm/single-query`
