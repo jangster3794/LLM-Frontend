@@ -64,14 +64,22 @@ const ConvoChainModal = () => {
 
   return (
     <>
-      <Button onClick={handleShow}>Convo Chain</Button>
+      <div className="button-div">
+        <button className="button-4" onClick={handleShow}>Conversation Chain</button>
+        <div className="button-text-box">
+          Seeking a friend who understands your past, appreciates your present, and offers valuable insights to enhance your future?
+          <br></br>
+          <br></br>
+          Look no further—I'm here for you!
+        </div>
+      </div>
       <Modal
         show={showModal}
         onHide={handleClose}
         dialogClassName="modal-dialog-responsive"
       >
-        <Modal.Header closeButton />
-        <Modal.Body className="modal-body-responsive">
+        <Modal.Header closeButton>Conversation Chain</Modal.Header>
+        <Modal.Body className="modal-body-responsive custom-modal-body">
           <Row>
             <Form.Group className="mb-3" controlId="input">
               <Form.Label>Let's ask some questions.</Form.Label>

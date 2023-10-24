@@ -46,14 +46,22 @@ const SingleQueryModal = () => {
 
   return (
     <>
-      <Button onClick={handleShow}>Single Query</Button>
+      <div className="button-div">
+        <button className="button-4" onClick={handleShow}>Single Query</button>
+        <div className="button-text-box">
+          Looking for a conversation with someone who's carefree and goes with the flow?
+          <br></br>
+          <br></br>
+          Look no further - that's me!
+        </div>
+      </div>
       <Modal
         show={showModal}
         onHide={handleClose}
         dialogClassName="modal-dialog-responsive"
       >
-        <Modal.Header closeButton />
-        <Modal.Body className="modal-body-responsive">
+        <Modal.Header closeButton>Single Query</Modal.Header>
+        <Modal.Body className="modal-body-responsive custom-modal-body">
           <Row>
             <Form.Group className="mb-3" controlId="input">
               <Form.Label>Let's ask some questions.</Form.Label>

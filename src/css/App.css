@@ -7,7 +7,8 @@ a {
 /* Header Footer MainContent start */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: calc(10vh - 2px);;
   background: #FFFFFF;
@@ -15,8 +16,8 @@ a {
 
 .header-logo {
   margin: 1vh 0vw 1vh 1vw;
-  width: 20vw;
-  height: 8vh;
+  width: 10vw;
+  height: 4vh;
 }
 
 .header-bottom-line {
@@ -44,6 +45,7 @@ a {
 .main-container {
   height: 85vh;
   overflow-y: hidden;
+  background-image: url("../assets/background.webp");
 }
 
 .routes-container  {
@@ -56,3 +58,65 @@ a {
   white-space: nowrap;
 }
 
+.dashboard-header {
+  display: flex;
+  color: white;
+  height: 15rem;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* CSS */
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-text-box {
+  width: 20rem;
+  padding: 10px;
+  font-size: 20px;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin-top: 25px;
+  background: #eafaff;
+  height: 15rem;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+.custom-modal-body {
+  background-color: #d9f3fa;
+}

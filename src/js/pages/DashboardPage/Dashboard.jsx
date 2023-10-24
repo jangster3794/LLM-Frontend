@@ -7,21 +7,21 @@ const Dashboard = () => {
 
   return (
     <>
-    <h1>Welcome To Dashboard</h1>
-    <Row className="m-0 p-0 d-flex">
-        <Col lg={1}/>
+    <Row className="dashboard-header">
+      <Row className="header-title">
+        Ask me a question.
+      </Row>
+    </Row>
+    <Row className="m-0 p-0 d-flex justify-content-center">
         <Col lg={3}>
-            <SingleQueryModal/>
+          <SingleQueryModal/>
         </Col>
-        <Col lg={1}/>
         <Col lg={3}>
-            <ConvoChainModal/>
+          <ConvoChainModal/>
         </Col>
-        <Col lg={1}/>
-        <Col lg={2}>
-            <TalkToPDF/>
+        <Col lg={3}>
+          <TalkToPDF/>
         </Col>
-        <Col lg={1}/>
     </Row>
     </>
   );
