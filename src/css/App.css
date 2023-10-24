@@ -1,0 +1,58 @@
+/* Univeral css start*/
+a {
+  text-decoration: none !important;
+}
+/* Univeral css end*/
+
+/* Header Footer MainContent start */
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(10vh - 2px);;
+  background: #FFFFFF;
+}
+
+.header-logo {
+  margin: 1vh 0vw 1vh 1vw;
+  width: 20vw;
+  height: 8vh;
+}
+
+.header-bottom-line {
+  height: 2px;
+  background: -webkit-linear-gradient(left, #EC008C 0%, #EC008C 50%, #00AEEF 50%, #00AEEF 100%);
+}
+
+@media (max-width: 575.98px) {
+  .header-logo {
+    width: 60vw; 
+  }
+}
+
+
+.footer{
+  width: 100%;
+  height: 5vh;
+  padding: 1vh;
+  background: #F8F8F8;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0px 4px 4px rgba(102, 102, 102, 0.18); 
+}
+
+.main-container {
+  height: 85vh;
+  overflow-y: hidden;
+}
+
+.routes-container  {
+  padding-top: 2rem;
+  border-bottom:2px solid rgba(131, 143, 158, 0.5) ;
+}
+
+/* set text in 1 line only */
+.form-label {
+  white-space: nowrap;
+}
+

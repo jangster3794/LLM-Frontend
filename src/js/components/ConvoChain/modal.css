@@ -1,0 +1,8 @@
+.modal-dialog-responsive {
+    max-width: 80%;
+}
+
+.modal-body-responsive {
+    height: 80vh;
+    overflow-y: auto;
+}
