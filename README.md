@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# ReactJS Frontend for LangChain OpenAI API Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a ReactJS frontend application that communicates with the LangChain OpenAI API integration. This frontend allows users to interact with the OpenAI's model through the API endpoints provided by the backend Flask application. This README file will guide you through the setup and usage of the ReactJS application.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before you begin, ensure you have the following installed/configured:
 
-### `npm start`
+- [Node.js](https://nodejs.org/en/) installed on your machine
+- npm (Node Package Manager)
+- The LangChain OpenAI API backend server up and running
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository to your local machine:
 
-### `npm test`
+    ```
+    git clone https://github.com/jangster3794/LLM-Frontend.git
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+    ```
+    cd LLM-Frontend
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the required npm packages:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Configuration
 
-### `npm run eject`
+Replace `"http://localhost:5000"` with the base URL where your LangChain OpenAI API backend is running.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running the ReactJS Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To start the ReactJS application, run the following command in your terminal within the project directory:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+The application will start running at `http://localhost:3000/`. You can access the application in your web browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Interacting with the Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Single Query:**
+   - Enter your question in the input field and click the "Submit" button to send a single query to the OpenAI language model.
 
-### Code Splitting
+2. **Conversation Chain:**
+   - Click the "Start Conversation" button to initiate a conversation with the OpenAI model.
+   - Enter your questions one by one in the input field and click the "Ask" button to send queries to the model as part of the conversation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **PDF Vectorstore Query:**
+   - Click the "Upload PDF" button to select a PDF file.
+   - After uploading, enter your question in the input field and click the "Submit" button to send a query to the PDF AI vectorstore model.
 
-### Analyzing the Bundle Size
+## Additional Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Ensure that your LangChain OpenAI API backend server is running and accessible from the ReactJS application. Update the `serverURL` in the `services/DataManagementService.js` file if your backend server is deployed on a different URL or port.
 
-### Making a Progressive Web App
+- Make sure your OpenAI API key is configured properly in the backend to authenticate and interact with the OpenAI GPT model.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Customize the ReactJS components and styles according to your requirements to enhance the user interface and user experience of the application.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to modify and extend the ReactJS application based on your project needs!

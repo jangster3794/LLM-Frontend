@@ -3,7 +3,7 @@ import { getRequest, postRequest, multipartPostRequeset } from "./WebService"
 const serverURL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000"
 
 function askSingleQuery(question) {
-    let url = `${serverURL}/llm/single-query`
+    let url = `${serverURL}/openai_llm/single-query`
     let formData={
         "question": question
     }
@@ -11,7 +11,7 @@ function askSingleQuery(question) {
 }
 
 function askConvoChain(question) {
-    let url = `${serverURL}/llm/convo-chain`
+    let url = `${serverURL}/openai_llm/convo-chain`
     let formData={
         "question": question
     }
@@ -19,17 +19,17 @@ function askConvoChain(question) {
 }
 
 function getConvoChain() {
-    let url = `${serverURL}/llm/convo-chain`
+    let url = `${serverURL}/openai_llm/convo-chain`
     return getRequest(url)
 }
 
 function uploadPDFFile(formData) {
-    let url = `${serverURL}/custom-llm/create-store`
+    let url = `${serverURL}/pdf_ai_llm/create-store`
     return multipartPostRequeset(url, formData)
 }
 
 function talkToPDF(question) {
-    let url = `${serverURL}/custom-llm/query`
+    let url = `${serverURL}/pdf_ai_llm/query`
     let formData={
         "question": question
     }
